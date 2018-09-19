@@ -8,7 +8,7 @@ let count = 0;
 
 class Users extends Component {
   constructor(props) {
-    super(props); 
+    super(props);
     this.state = {
       error: false, // to display error message if service failed
       isLoading: false, // to display a loading msg if request is in progress
@@ -122,7 +122,9 @@ class Users extends Component {
       overflowY: "scroll",
       float: "left"
     };
-
+    let processUser = users => {
+      return users.map((user, i) => <UserComponent user={user} key={i} />);
+    };
     return (
       <div>
         <div style={mainDiv}>
@@ -136,9 +138,7 @@ class Users extends Component {
             }}
             name="search"
           />
-          {users.map((user, i) => (
-            <UserComponent user={user} key={i} />
-          ))}
+          {processUser(users)}
           <hr />
           {error && <div style={{ color: "#900" }}>{error}</div>}
           {end && <div style={{ color: "#900" }}>{end}</div>}
@@ -150,9 +150,7 @@ class Users extends Component {
           style={dropContainerStyle}
         >
           <h3>Drop Here</h3>
-          {selectedUsers.map((user, i) => (
-            <UserComponent user={user} key={i} />
-          ))}
+          {processUser(selectedUsers)}
         </div>
       </div>
     );
