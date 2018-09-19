@@ -7,13 +7,14 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "check-quality": "eslint src/*.js src/components/*.js",
-    "test-e2e": "jest",
-    "test": "jest unit-test/script.test.jsx"
+    "test-e2e": "jest e2e_test/*.js",
+    "test": "jest unit_test/*.test.jsx"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "react": "^16.5.1",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.1"
   },
   "devDependencies": {

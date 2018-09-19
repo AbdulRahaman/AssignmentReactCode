@@ -1,5 +1,14 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import {
+  Grid,
+  Row,
+  Col,
+  Form,
+  FormGroup,
+  FormControl,
+  ControlLabel
+} from "react-bootstrap";
 import config from "./config";
 import { UserComponent } from "./components/userComponent";
 
@@ -109,50 +118,56 @@ class Users extends Component {
   render() {
     const { error, isLoading, users, selectedUsers, end } = this.state;
     let mainDiv = {
-      width: "80%",
       overflowY: "scroll",
-      height: "100%",
-      float: "left"
+      height: "100%"
     };
 
     let dropContainerStyle = {
       height: "500px",
-      width: "300px",
-      marginLeft: "20px",
-      overflowY: "scroll",
-      float: "left"
+      overflowY: "scroll"
     };
     let processUser = users => {
       return users.map((user, i) => <UserComponent user={user} key={i} />);
     };
     return (
-      <div>
-        <div style={mainDiv}>
-          <label htmlFor="search">Search: </label>
-          <input
-            type="search"
-            id="search"
-            onChange={this.searchUser}
-            ref={search => {
-              this.search = search;
-            }}
-            name="search"
-          />
-          {processUser(users)}
-          <hr />
-          {error && <div style={{ color: "#900" }}>{error}</div>}
-          {end && <div style={{ color: "#900" }}>{end}</div>}
-          {isLoading && <div>Loading...</div>}
-        </div>
-        <div
-          onDrop={this.drop}
-          onDragOver={this.allowDrop}
-          style={dropContainerStyle}
-        >
-          <h3>Drop Here</h3>
-          {processUser(selectedUsers)}
-        </div>
-      </div>
+      <Grid>
+        <Row>
+          <Col md={3}>
+            <Form inline>
+              <FormGroup controlId="search">
+                <ControlLabel>Search: </ControlLabel> {" "}
+                <FormControl
+                  type="search"
+                  id="search"
+                  onChange={this.searchUser}
+                  ref={search => {
+                    this.search = search;
+                  }}
+                  name="search"
+                />
+              </FormGroup>
+            </Form>
+          </Col>
+        </Row>
+        <Row>
+          <Col md={8} xs={8} style={mainDiv}>
+            {processUser(users)}
+            <hr />
+            {error && <div style={{ color: "#900" }}>{error}</div>}
+            {end && <div style={{ color: "#900" }}>{end}</div>}
+            {isLoading && <div>Loading...</div>}
+          </Col>
+          <Col
+            md={3} xs={3}
+            onDrop={this.drop}
+            onDragOver={this.allowDrop}
+            style={dropContainerStyle}
+          >
+            <h3>Drop Here</h3>
+            {processUser(selectedUsers)}
+          </Col>
+        </Row>
+      </Grid>
     );
   }
 }
