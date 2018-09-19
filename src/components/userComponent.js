@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 
-export class UserRecord extends Component {
+export class userComponent extends Component {
   constructor(props) {
     super(props);
     this.drag = this.drag.bind(this);
@@ -20,7 +20,7 @@ export class UserRecord extends Component {
           <Fragment key={user.name}>
             <div>
               <div>
-                <p>{user.name}</p>
+                <p><strong>{user.name}</strong></p>
                 <p>Email: {user.email}</p>
               </div>
             </div>
@@ -31,6 +31,6 @@ export class UserRecord extends Component {
   }
 }
 
-UserRecord.propTypes = {
+userComponent.propTypes = {
   user: PropTypes.object
 };

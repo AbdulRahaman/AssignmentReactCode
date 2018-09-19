@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import config from "./config";
-import { UserRecord } from "./UserRecord";
+import { userComponent } from "./components/userComponent";
 
 // used to count the users reacord (helped to stop loading users if count is more than totalrecords count configured
 let count = 0;
@@ -138,7 +138,7 @@ class Users extends Component {
             style={searchStyle}
           />
           {users.map((user, i) => (
-            <UserRecord user={user} key={i} />
+            <userComponent user={user} key={i} />
           ))}
           <hr />
           {error && <div style={{ color: "#900" }}>{error}</div>}
@@ -152,7 +152,7 @@ class Users extends Component {
         >
           <h3>Drop Here</h3>
           {selectedUsers.map((user, i) => (
-            <UserRecord user={user} key={i} />
+            <userComponent user={user} key={i} />
           ))}
         </div>
       </div>

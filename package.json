@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "check-quality": "eslint src/*.js"
+    "check-quality": "eslint src/*.js src/components/*.js"
   },
   "author": "",
   "license": "ISC",
