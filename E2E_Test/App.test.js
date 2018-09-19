@@ -35,7 +35,7 @@ describe("Search User", () => {
         });
       });
       await page.screenshot({
-        path: "./E2E_Test/screenshots/users.jpg",
+        path: "./e2e_test/screenshots/users.jpg",
         fullPage: false
       });
       await expect(list.length>0);
