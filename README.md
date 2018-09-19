@@ -1,6 +1,6 @@
 Make sure below packages are installed on your system
-npm install -g eslint
-npm install eslint-plugin-react -g
+1. npm install -g eslint
+2. npm install eslint-plugin-react -g
 
 Execution Steps
 
