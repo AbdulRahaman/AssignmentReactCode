@@ -8,7 +8,7 @@ let count = 0;
 
 class Users extends Component {
   constructor(props) {
-    super(props);
+    super(props); 
     this.state = {
       error: false, // to display error message if service failed
       isLoading: false, // to display a loading msg if request is in progress
@@ -19,9 +19,7 @@ class Users extends Component {
     };
     this.search = React.createRef();
     window.onscroll = () => {
-      const {
-        loadUsers
-      } = this;
+      const { loadUsers } = this;
       if (
         window.innerHeight + document.documentElement.scrollTop ===
         document.documentElement.offsetHeight
@@ -63,15 +61,15 @@ class Users extends Component {
     e.preventDefault();
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.loadUsers();
   }
 
-  loadUsers = searchString => {
+  loadUsers(searchString) {
     if (count < config.getTotalRecordsCount()) {
       this.setState({ isLoading: true }, () => {
         fetch("https://randomuser.me/api/?results=" + config.getLimit())
-          .then(response=>response.json())
+          .then(response => response.json())
           .then(res => {
             this.setState({
               isLoading: false,
@@ -105,7 +103,7 @@ class Users extends Component {
     } else {
       this.setState({ end: "Reached to an End" });
     }
-  };
+  }
 
   render() {
     const { error, isLoading, users, selectedUsers, end } = this.state;

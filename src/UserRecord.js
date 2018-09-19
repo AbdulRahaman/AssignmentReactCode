@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 
 export class UserRecord extends Component {
   constructor(props) {
@@ -27,3 +28,7 @@ export class UserRecord extends Component {
     );
   }
 }
+
+UserRecord.propTypes = {
+  user: PropTypes.object
+};
