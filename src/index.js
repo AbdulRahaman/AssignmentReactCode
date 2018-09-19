@@ -112,7 +112,7 @@ class Users extends Component {
       width: "80%",
       overflowY: "scroll",
       height: "100%",
-      float: "left"
+      display: "left"
     };
     let dropContainerStyle = {
       height: "500px",

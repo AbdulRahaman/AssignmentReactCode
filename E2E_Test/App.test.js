@@ -27,16 +27,16 @@ describe("Search User", () => {
   test(
     "Should display a list of users",
     async () => {
-      await page.screenshot({
-        path: "screenshots/users.jpg",
-        fullPage: true
-      });
       const list = await page.evaluate(result => {
         const usernames = Array.from(document.querySelectorAll(".username"));
         return usernames.map(user => {
           const name = user.textContent;
           return `${name}`;
         });
+      });
+      await page.screenshot({
+        path: "./E2E_Test/screenshots/users.jpg",
+        fullPage: false
       });
       await expect(list.length>0);
     },
