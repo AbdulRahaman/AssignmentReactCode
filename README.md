@@ -9,8 +9,12 @@ Open terminal or command prompt and follow below steps
 
 To build follow below steps
 1. goto Root directory of the project
-2. react-scripts build
+2. npm run build
 
 To execute Dev version of code
 1. goto Root directory of the project
-2. react-scripts start
+2. npm run start
+
+To check code quality
+1. goto Root directory of the project
+2. npm run check-quality
