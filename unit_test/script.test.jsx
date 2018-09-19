@@ -1,7 +1,7 @@
 import Enzyme, {shallow} from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 import React from "react";
-import { UserComponent } from "./userComponent";
+import { UserComponent } from "../src/components/userComponent";
 
 Enzyme.configure({ adapter: new Adapter() });
 

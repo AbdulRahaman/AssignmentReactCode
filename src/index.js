@@ -121,10 +121,18 @@ class Users extends Component {
       overflowY: "scroll",
       height: "100%"
     };
-
     let dropContainerStyle = {
       height: "500px",
-      overflowY: "scroll"
+      overflowY: "scroll",
+      marginLeft: "10px"
+    };
+    let dropTitle = {
+      textAlign: "center",
+      textDecoration: "underline"
+    };
+    let searchContainer = {
+      padding: "0px",
+      margin: "10px 0px"
     };
     let processUser = users => {
       return users.map((user, i) => <UserComponent user={user} key={i} />);
@@ -132,10 +140,13 @@ class Users extends Component {
     return (
       <Grid>
         <Row>
-          <Col md={3}>
+          <Col><h1>Title</h1></Col>
+        </Row>
+        <Row>
+          <Col md={3} xs={3} style={searchContainer}>
             <Form inline>
               <FormGroup controlId="search">
-                <ControlLabel>Search: </ControlLabel> {" "}
+                <ControlLabel>Search: </ControlLabel>{" "}
                 <FormControl
                   type="search"
                   id="search"
@@ -143,6 +154,7 @@ class Users extends Component {
                   ref={search => {
                     this.search = search;
                   }}
+                  placeholder="Search by username"
                   name="search"
                 />
               </FormGroup>
@@ -150,20 +162,20 @@ class Users extends Component {
           </Col>
         </Row>
         <Row>
-          <Col md={8} xs={8} style={mainDiv}>
+          <Col md={7} xs={7} style={mainDiv}>
             {processUser(users)}
-            <hr />
             {error && <div style={{ color: "#900" }}>{error}</div>}
             {end && <div style={{ color: "#900" }}>{end}</div>}
             {isLoading && <div>Loading...</div>}
           </Col>
           <Col
-            md={3} xs={3}
+            md={4}
+            xs={4}
             onDrop={this.drop}
             onDragOver={this.allowDrop}
             style={dropContainerStyle}
           >
-            <h3>Drop Here</h3>
+            <h3 style={dropTitle}>Drop Here</h3>
             {processUser(selectedUsers)}
           </Col>
         </Row>

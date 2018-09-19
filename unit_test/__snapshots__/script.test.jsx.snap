@@ -23,15 +23,33 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
-      "children": <div
+      "bsClass": "row",
+      "children": <Col
+        bsClass="col"
+        componentClass="div"
         draggable="true"
         onDragStart={[Function]}
       >
         <React.Fragment>
           <div>
             <div>
+              <span>
+                <Glyphicon
+                  bsClass="glyphicon"
+                  glyph="user"
+                  style={
+                    Object {
+                      "color": "#aba9a9",
+                      "display": "block",
+                      "float": "left",
+                      "fontSize": "35px",
+                      "padding": "10px",
+                    }
+                  }
+                />
+              </span>
               <p
                 className="username"
               >
@@ -44,7 +62,8 @@ ShallowWrapper {
             </div>
           </div>
         </React.Fragment>
-      </div>,
+      </Col>,
+      "componentClass": "div",
       "id": "sample",
       "style": Object {
         "borderBottom": "solid 2px #e7e7e7",
@@ -54,11 +73,27 @@ ShallowWrapper {
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
+        "bsClass": "col",
         "children": <React.Fragment>
           <div>
             <div>
+              <span>
+                <Glyphicon
+                  bsClass="glyphicon"
+                  glyph="user"
+                  style={
+                    Object {
+                      "color": "#aba9a9",
+                      "display": "block",
+                      "float": "left",
+                      "fontSize": "35px",
+                      "padding": "10px",
+                    }
+                  }
+                />
+              </span>
               <p
                 className="username"
               >
@@ -71,6 +106,7 @@ ShallowWrapper {
             </div>
           </div>
         </React.Fragment>,
+        "componentClass": "div",
         "draggable": "true",
         "onDragStart": [Function],
       },
@@ -82,6 +118,21 @@ ShallowWrapper {
         "props": Object {
           "children": <div>
             <div>
+              <span>
+                <Glyphicon
+                  bsClass="glyphicon"
+                  glyph="user"
+                  style={
+                    Object {
+                      "color": "#aba9a9",
+                      "display": "block",
+                      "float": "left",
+                      "fontSize": "35px",
+                      "padding": "10px",
+                    }
+                  }
+                />
+              </span>
               <p
                 className="username"
               >
@@ -101,6 +152,21 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <div>
+              <span>
+                <Glyphicon
+                  bsClass="glyphicon"
+                  glyph="user"
+                  style={
+                    Object {
+                      "color": "#aba9a9",
+                      "display": "block",
+                      "float": "left",
+                      "fontSize": "35px",
+                      "padding": "10px",
+                    }
+                  }
+                />
+              </span>
               <p
                 className="username"
               >
@@ -119,6 +185,21 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                <span>
+                  <Glyphicon
+                    bsClass="glyphicon"
+                    glyph="user"
+                    style={
+                      Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      }
+                    }
+                  />
+                </span>,
                 <p
                   className="username"
                 >
@@ -132,6 +213,47 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Glyphicon
+                    bsClass="glyphicon"
+                    glyph="user"
+                    style={
+                      Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      }
+                    }
+                  />,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "bsClass": "glyphicon",
+                    "glyph": "user",
+                    "style": Object {
+                      "color": "#aba9a9",
+                      "display": "block",
+                      "float": "left",
+                      "fontSize": "35px",
+                      "padding": "10px",
+                    },
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "span",
+              },
               Object {
                 "instance": null,
                 "key": undefined,
@@ -178,23 +300,41 @@ ShallowWrapper {
         },
         "type": Symbol(react.fragment),
       },
-      "type": "div",
+      "type": [Function],
     },
-    "type": "div",
+    "type": [Function],
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
-        "children": <div
+        "bsClass": "row",
+        "children": <Col
+          bsClass="col"
+          componentClass="div"
           draggable="true"
           onDragStart={[Function]}
         >
           <React.Fragment>
             <div>
               <div>
+                <span>
+                  <Glyphicon
+                    bsClass="glyphicon"
+                    glyph="user"
+                    style={
+                      Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      }
+                    }
+                  />
+                </span>
                 <p
                   className="username"
                 >
@@ -207,7 +347,8 @@ ShallowWrapper {
               </div>
             </div>
           </React.Fragment>
-        </div>,
+        </Col>,
+        "componentClass": "div",
         "id": "sample",
         "style": Object {
           "borderBottom": "solid 2px #e7e7e7",
@@ -217,11 +358,27 @@ ShallowWrapper {
       "rendered": Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "class",
         "props": Object {
+          "bsClass": "col",
           "children": <React.Fragment>
             <div>
               <div>
+                <span>
+                  <Glyphicon
+                    bsClass="glyphicon"
+                    glyph="user"
+                    style={
+                      Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      }
+                    }
+                  />
+                </span>
                 <p
                   className="username"
                 >
@@ -234,6 +391,7 @@ ShallowWrapper {
               </div>
             </div>
           </React.Fragment>,
+          "componentClass": "div",
           "draggable": "true",
           "onDragStart": [Function],
         },
@@ -245,6 +403,21 @@ ShallowWrapper {
           "props": Object {
             "children": <div>
               <div>
+                <span>
+                  <Glyphicon
+                    bsClass="glyphicon"
+                    glyph="user"
+                    style={
+                      Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      }
+                    }
+                  />
+                </span>
                 <p
                   className="username"
                 >
@@ -264,6 +437,21 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <div>
+                <span>
+                  <Glyphicon
+                    bsClass="glyphicon"
+                    glyph="user"
+                    style={
+                      Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      }
+                    }
+                  />
+                </span>
                 <p
                   className="username"
                 >
@@ -282,6 +470,21 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
+                  <span>
+                    <Glyphicon
+                      bsClass="glyphicon"
+                      glyph="user"
+                      style={
+                        Object {
+                          "color": "#aba9a9",
+                          "display": "block",
+                          "float": "left",
+                          "fontSize": "35px",
+                          "padding": "10px",
+                        }
+                      }
+                    />
+                  </span>,
                   <p
                     className="username"
                   >
@@ -295,6 +498,47 @@ ShallowWrapper {
               },
               "ref": null,
               "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Glyphicon
+                      bsClass="glyphicon"
+                      glyph="user"
+                      style={
+                        Object {
+                          "color": "#aba9a9",
+                          "display": "block",
+                          "float": "left",
+                          "fontSize": "35px",
+                          "padding": "10px",
+                        }
+                      }
+                    />,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "bsClass": "glyphicon",
+                      "glyph": "user",
+                      "style": Object {
+                        "color": "#aba9a9",
+                        "display": "block",
+                        "float": "left",
+                        "fontSize": "35px",
+                        "padding": "10px",
+                      },
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "span",
+                },
                 Object {
                   "instance": null,
                   "key": undefined,
@@ -341,9 +585,9 @@ ShallowWrapper {
           },
           "type": Symbol(react.fragment),
         },
-        "type": "div",
+        "type": [Function],
       },
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
