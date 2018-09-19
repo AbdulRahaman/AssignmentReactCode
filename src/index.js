@@ -29,6 +29,7 @@ class Users extends Component {
     };
     this.drop = this.drop.bind(this);
     this.searchUser = this.searchUser.bind(this);
+    this.loadUsers = this.loadUsers.bind(this);
   }
 
   /*
@@ -108,14 +109,14 @@ class Users extends Component {
   render() {
     const { error, isLoading, users, selectedUsers, end } = this.state;
     let mainDiv = {
-      width: "300px",
+      width: "80%",
       overflowY: "scroll",
       height: "100%",
       float: "left"
     };
     let searchStyle = { width: "200px", height: "20px" };
     let dropContainerStyle = {
-      height: "400px",
+      height: "500px",
       width: "300px",
       marginLeft: "20px",
       overflowY: "scroll",

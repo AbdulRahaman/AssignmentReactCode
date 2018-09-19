@@ -11,9 +11,11 @@ export class UserRecord extends Component {
   }
   render() {
     let user = this.props.user;
+    let itemStyle = {
+      borderBottom: "solid 2px #e7e7e7"
+    };
     return (
-      <div>
-        <hr />
+      <div style={itemStyle}>
         <div draggable="true" onDragStart={this.drag}>
           <Fragment key={user.name}>
             <div>
