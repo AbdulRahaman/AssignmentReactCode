@@ -1,3 +1,7 @@
+Make sure below packages are installed on your system
+npm install -g eslint
+npm install eslint-plugin-react -g
+
 Execution Steps
 
 Open terminal or command prompt and follow below steps
