@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 
-export class userComponent extends Component {
+export class UserComponent extends Component {
   constructor(props) {
     super(props);
     this.drag = this.drag.bind(this);
@@ -15,12 +15,12 @@ export class userComponent extends Component {
       borderBottom: "solid 2px #e7e7e7"
     };
     return (
-      <div style={itemStyle}>
+      <div style={itemStyle} id={user.uuid}>
         <div draggable="true" onDragStart={this.drag}>
           <Fragment key={user.name}>
             <div>
               <div>
-                <p><strong>{user.name}</strong></p>
+                <p className="username"><strong>{user.name}</strong></p>
                 <p>Email: {user.email}</p>
               </div>
             </div>
@@ -31,6 +31,6 @@ export class userComponent extends Component {
   }
 }
 
-userComponent.propTypes = {
+UserComponent.propTypes = {
   user: PropTypes.object
 };

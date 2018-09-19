@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import config from "./config";
-import { userComponent } from "./components/userComponent";
+import { UserComponent } from "./components/userComponent";
 
 // used to count the users reacord (helped to stop loading users if count is more than totalrecords count configured
 let count = 0;
@@ -114,7 +114,6 @@ class Users extends Component {
       height: "100%",
       float: "left"
     };
-    let searchStyle = { width: "200px", height: "20px" };
     let dropContainerStyle = {
       height: "500px",
       width: "300px",
@@ -128,17 +127,16 @@ class Users extends Component {
         <div style={mainDiv}>
           <label htmlFor="search">Search: </label>
           <input
-            type="text"
+            type="search"
             id="search"
             onChange={this.searchUser}
             ref={search => {
               this.search = search;
             }}
             name="search"
-            style={searchStyle}
           />
           {users.map((user, i) => (
-            <userComponent user={user} key={i} />
+            <UserComponent user={user} key={i} />
           ))}
           <hr />
           {error && <div style={{ color: "#900" }}>{error}</div>}
@@ -152,7 +150,7 @@ class Users extends Component {
         >
           <h3>Drop Here</h3>
           {selectedUsers.map((user, i) => (
-            <userComponent user={user} key={i} />
+            <UserComponent user={user} key={i} />
           ))}
         </div>
       </div>
