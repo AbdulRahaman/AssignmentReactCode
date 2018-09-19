@@ -30,7 +30,7 @@ class Users extends Component {
     window.onscroll = () => {
       const { loadUsers } = this;
       if (
-        window.innerHeight + document.documentElement.scrollTop ===
+        window.innerHeight + document.documentElement.scrollTop >=
         document.documentElement.offsetHeight
       ) {
         loadUsers(this.search.value);
@@ -139,9 +139,6 @@ class Users extends Component {
     };
     return (
       <Grid>
-        <Row>
-          <Col><h1>Title</h1></Col>
-        </Row>
         <Row>
           <Col md={3} xs={3} style={searchContainer}>
             <Form inline>
