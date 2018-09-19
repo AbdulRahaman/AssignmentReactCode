@@ -14,7 +14,7 @@ beforeAll(async () => {
   page = await browser.newPage();
   page.emulate({
     viewport: {
-      width: 700,
+      width: 1400,
       height: 800
     },
     userAgent: ""
