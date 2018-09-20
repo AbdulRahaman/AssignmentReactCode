@@ -1,3 +1,7 @@
+Make sure below packages are installed on your system
+1. npm install -g eslint
+2. npm install eslint-plugin-react -g
+
 Execution Steps
 
 Open terminal or command prompt and follow below steps
@@ -22,3 +26,7 @@ To check code quality
 To Run E2E test cases
 1. goto Root directory of the project
 2. npm run test-e2e
+
+To Run Unit test cases
+1. goto Root directory of the project
+2. npm run test
