@@ -27,6 +27,7 @@
     "jest-cli": "^23.6.0",
     "puppeteer": "^1.8.0",
     "react-addons-test-utils": "^15.6.2",
+    "react-doc-generator": "^1.2.5",
     "react-scripts": "^1.1.5"
   }
 }
